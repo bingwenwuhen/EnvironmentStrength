@@ -9,6 +9,7 @@
 	<version>1.0-SNAPSHOT</version>
 	<modules>
 		<module>core</module>
+		<module>guice</module>
 	</modules>
 	<name>environment</name>
 	<description></description>
