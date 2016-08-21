@@ -11,6 +11,7 @@
 		<module>core</module>
 		<module>guice</module>
 		<module>guice-web</module>
+		<module>guice-web2</module>
 	</modules>
 	<name>environment</name>
 	<description></description>
@@ -22,6 +23,8 @@
 		<log4j.version>1.2.17</log4j.version>
 		<lombok.version>1.16.10</lombok.version>
 		<servlet.version>3.1.0</servlet.version>
+		<jersey.version>1.19</jersey.version>
+		<jetty.version>9.0.5.v20130815</jetty.version>
 	</properties>
 
 	<dependencies>
@@ -71,6 +74,41 @@
 				<groupId>com.google.inject.extensions</groupId>
 				<artifactId>guice-jmx</artifactId>
 				<version>${guice.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.jersey</groupId>
+				<artifactId>jersey-core</artifactId>
+				<version>${jersey.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.jersey</groupId>
+				<artifactId>jersey-json</artifactId>
+				<version>${jersey.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.jersey</groupId>
+				<artifactId>jersey-server</artifactId>
+				<version>${jersey.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.jersey.contribs</groupId>
+				<artifactId>jersey-guice</artifactId>
+				<version>${jersey.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.jersey</groupId>
+				<artifactId>jersey-servlet</artifactId>
+				<version>${jersey.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-server</artifactId>
+				<version>${jetty.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.jetty</groupId>
+				<artifactId>jetty-servlet</artifactId>
+				<version>${jetty.version}</version>
 			</dependency>
 
 		</dependencies>
